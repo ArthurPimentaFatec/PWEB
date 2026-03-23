@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portal de Notícias</title>
+</head>
+
+<body>
+
+    <!-- cabeçalho do site -->
+    <header>
+        <h1>Portal Notícias</h1>
+        <p>Segunda-feira, 23 de março de 2026 &nbsp;|&nbsp; Atualizado às 08:30</p>
+    </header>
+
+    <!-- menu de navegação principal -->
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Brasil</a></li>
+            <li><a href="#">Mundo</a></li>
+            <li><a href="#">Economia</a></li>
+            <li><a href="#">Tecnologia</a></li>
+            <li><a href="#">Esportes</a></li>
+            <li><a href="#">Entretenimento</a></li>
+        </ul>
+    </nav>
+
+    <!-- conteúdo principal: notícias + sidebar -->
+    <div class="container">
+
+        <!-- coluna das notícias -->
+        <main class="noticias">
+
+            <!-- notícia em destaque -->
+            <article class="noticia-destaque">
+                <span class="tag">Destaque</span>
+                <!-- imagem de placeholder pois não temos imagens reais -->
+                <img src="https://via.placeholder.com/800x280/2c3e50/ffffff?text=Foto+Principal" alt="Foto da notícia principal">
+                <h2>Governo anuncia novo pacote de medidas para a economia brasileira</h2>
+                <p class="data">23/03/2026 às 07:15</p>
+                <p>
+                    O governo federal apresentou nesta manhã um conjunto de medidas econômicas voltadas para 
+                    o estímulo ao emprego e à geração de renda. Entre os anúncios estão novos programas 
+                    de crédito para pequenas empresas e investimentos em infraestrutura nas regiões Norte e Nordeste.
+                    Os detalhes serão apresentados em coletiva de imprensa ao longo do dia.
+                </p>
+                <a class="leia-mais" href="#">Leia mais »</a>
+            </article>
+
+            <!-- grade com notícias menores -->
+            <div class="grade-noticias">
+
+                <!-- card 1 -->
+                <article class="card-noticia">
+                    <span class="tag">Tecnologia</span>
+                    <img src="https://via.placeholder.com/400x150/8e44ad/ffffff?text=Tecnologia" alt="Foto tecnologia">
+                    <h3>Startup brasileira lança aplicativo de inteligência artificial para estudantes</h3>
+                    <p class="data">23/03/2026 às 06:00</p>
+                    <p>A ferramenta promete ajudar alunos do ensino médio a organizar seus estudos com base em IA.</p>
+                    <a class="leia-mais" href="#">Leia mais »</a>
+                </article>
+
+                <!-- card 2 -->
+                <article class="card-noticia">
+                    <span class="tag">Esportes</span>
+                    <img src="https://via.placeholder.com/400x150/27ae60/ffffff?text=Esportes" alt="Foto esportes">
+                    <h3>Seleção brasileira convoca jogadores para os próximos amistosos internacionais</h3>
+                    <p class="data">23/03/2026 às 05:45</p>
+                    <p>O técnico anunciou a lista com 23 convocados para os jogos previstos para abril.</p>
+                    <a class="leia-mais" href="#">Leia mais »</a>
+                </article>
+
+                <!-- card 3 -->
+                <article class="card-noticia">
+                    <span class="tag">Mundo</span>
+                    <img src="https://via.placeholder.com/400x150/2980b9/ffffff?text=Mundo" alt="Foto mundo">
+                    <h3>Líderes europeus se reúnem para discutir acordo climático global</h3>
+                    <p class="data">22/03/2026 às 22:10</p>
+                    <p>A cúpula acontece em Bruxelas e deve durar dois dias, com representantes de 40 países.</p>
+                    <a class="leia-mais" href="#">Leia mais »</a>
+                </article>
+
+                <!-- card 4 -->
+                <article class="card-noticia">
+                    <span class="tag">Entretenimento</span>
+                    <img src="https://via.placeholder.com/400x150/e67e22/ffffff?text=Entretenimento" alt="Foto entretenimento">
+                    <h3>Novo filme nacional estreia no cinema e já lidera as bilheterias do país</h3>
+                    <p class="data">22/03/2026 às 20:00</p>
+                    <p>Produção independente chamou atenção da crítica e do público logo em seu primeiro final de semana.</p>
+                    <a class="leia-mais" href="#">Leia mais »</a>
+                </article>
+
+            </div>
+            <!-- fim da grade de notícias -->
+
+        </main>
+        <!-- fim da coluna de notícias -->
+
+        <!-- barra lateral direita -->
+        <aside class="sidebar">
+
+            <!-- bloco: mais lidas -->
+            <div class="sidebar-bloco">
+                <h4>Mais Lidas</h4>
+                <ul class="mais-lidas">
+                    <li><span class="numero">1.</span> <a href="#">Preços do combustível sobem novamente nas refinarias</a></li>
+                    <li><span class="numero">2.</span> <a href="#">Nova lei de trânsito entra em vigor em abril</a></li>
+                    <li><span class="numero">3.</span> <a href="#">Brasil registra recorde de exportações no primeiro trimestre</a></li>
+                    <li><span class="numero">4.</span> <a href="#">Pesquisa aponta aumento no consumo de energia solar</a></li>
+                    <li><span class="numero">5.</span> <a href="#">Time paulista vence clássico no fim de semana</a></li>
+                </ul>
+            </div>
+
+            <!-- bloco: previsão do tempo -->
+            <div class="sidebar-bloco">
+                <h4>Tempo - São Paulo</h4>
+                <div class="clima">
+                    <p>☀️ <strong>Hoje:</strong> 28°C / 19°C</p>
+                    <p>🌦️ <strong>Amanhã:</strong> 24°C / 18°C</p>
+                    <p>🌧️ <strong>Quarta:</strong> 22°C / 17°C</p>
+                </div>
+            </div>
+
+            <!-- bloco: últimas notícias -->
+            <div class="sidebar-bloco">
+                <h4>Últimas</h4>
+                <ul class="mais-lidas">
+                    <li><a href="#">Bolsa de valores abre em alta nesta segunda-feira</a></li>
+                    <li><a href="#">Prefeitura abre processo seletivo com 300 vagas</a></li>
+                    <li><a href="#">Universidades anunciam calendário do segundo semestre</a></li>
+                    <li><a href="#">Pesquisadores descobrem nova espécie de peixe no Amazonas</a></li>
+                </ul>
+            </div>
+
+        </aside>
+        <!-- fim da sidebar -->
+
+    </div>
+    <!-- fim do container principal -->
+
+    <!-- rodapé da página -->
+    <footer>
+        <p>© 2026 Portal Notícias — Todos os direitos reservados</p>
+        <p style="margin-top: 8px;">
+            <a href="#">Sobre nós</a> &nbsp;|&nbsp;
+            <a href="#">Contato</a> &nbsp;|&nbsp;
+            <a href="#">Política de Privacidade</a>
+        </p>
+    </footer>
+
+</body>
+</html>

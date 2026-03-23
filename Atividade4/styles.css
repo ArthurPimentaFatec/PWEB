@@ -1,0 +1,238 @@
+  /* resetando margens padrão do navegador */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: #c0392b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #f5b7b1;
+        }
+
+        /* ===== NAVEGAÇÃO ===== */
+        nav {
+            background-color: #2c3e50;
+            padding: 10px 20px;
+        }
+
+        /* usando flexbox pra deixar os itens do menu em linha */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* ===== CONTEÚDO PRINCIPAL ===== */
+        /* flexbox aqui pra colocar as notícias e a sidebar lado a lado */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* ===== ÁREA DAS NOTÍCIAS ===== */
+        .noticias {
+            flex: 3; /* ocupa mais espaço que a sidebar */
+        }
+
+        /* notícia em destaque (maior, fica no topo) */
+        .noticia-destaque {
+            background-color: white;
+            border: 1px solid #cccccc;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .noticia-destaque img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            background-color: #bdc3c7; /* placeholder caso a imagem não carregue */
+        }
+
+        .noticia-destaque h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+
+        .noticia-destaque p {
+            margin-top: 8px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* grade de notícias menores - usando flexbox com wrap */
+        .grade-noticias {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* cada card ocupa quase metade da linha */
+        .card-noticia {
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 12px;
+            flex: 1 1 calc(50% - 15px); /* dois por linha */
+        }
+
+        .card-noticia img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            background-color: #bdc3c7;
+        }
+
+        .card-noticia h3 {
+            font-size: 16px;
+            margin-top: 8px;
+            color: #2c3e50;
+        }
+
+        .card-noticia p {
+            font-size: 13px;
+            color: #777;
+            margin-top: 5px;
+            line-height: 1.5;
+        }
+
+        /* tag de categoria */
+        .tag {
+            display: inline-block;
+            background-color: #c0392b;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        /* data da notícia */
+        .data {
+            font-size: 12px;
+            color: #aaa;
+            margin-top: 4px;
+        }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            flex: 1;
+        }
+
+        .sidebar-bloco {
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar-bloco h4 {
+            font-size: 16px;
+            color: #c0392b;
+            border-bottom: 2px solid #c0392b;
+            padding-bottom: 6px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        /* lista de notícias mais lidas */
+        .mais-lidas li {
+            list-style: none;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .mais-lidas li:last-child {
+            border-bottom: none;
+        }
+
+        .mais-lidas li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .mais-lidas li a:hover {
+            color: #c0392b;
+        }
+
+        /* numeração das mais lidas */
+        .numero {
+            font-weight: bold;
+            color: #c0392b;
+            margin-right: 6px;
+        }
+
+        /* bloco de tempo/clima */
+        .clima p {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        /* ===== RODAPÉ ===== */
+        footer {
+            background-color: #2c3e50;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* link "leia mais" */
+        .leia-mais {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #c0392b;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .leia-mais:hover {
+            text-decoration: underline;
+        }
