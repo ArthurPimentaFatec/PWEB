@@ -1,0 +1,49 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}
+
+.textoCor::after {content: 'verde';}
+
+@media screen and (min-width: 420px) {
+  .container {
+    background-color: #005F6A;
+  }
+  .textoCor::after {content: 'petroleo';}
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: orange;
+  }
+  .textoCor::after {content: 'laranja';}
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    background-color: violet;
+  }
+  .textoCor::after {content: 'rosa';}
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    background-color: red;
+  }
+  .textoCor::after {content: 'vermelho';}
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    background-color: darkslateblue;
+  }
+  .textoCor::after {content: 'indigo';}
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    background-color: yellow;
+  }
+  .textoCor::after {content: 'amarelo';}
+}
