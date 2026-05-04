@@ -1,0 +1,45 @@
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    width: 70%;
+    margin: 10vh auto 0 auto;
+}
+
+.sub-container{
+    display: inline-block;
+    width: 30%;
+    height: 30vh;
+}
+
+.sub-container button{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#pedra{
+    background-image: url(images/pedra.png);
+    background-size: cover;
+    background-position: center;
+}
+#pedra:hover{
+    background-size: 110%;
+}
+#papel{
+    background-image: url(images/papel.webp);
+    background-size: cover;
+    background-position: center;
+}
+#papel:hover{
+    background-size: 110%;
+}
+#tesoura{
+    background-image: url(images/tesoura.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#tesoura:hover{
+    background-size: 110%;
+}

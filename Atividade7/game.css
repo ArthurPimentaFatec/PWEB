@@ -1,0 +1,99 @@
+/* === Reset & Base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f1a;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Layout === */
+.game-wrapper {
+  text-align: center;
+  padding: 2rem;
+}
+
+.game-title {
+  color: #e0d7ff;
+  font-size: 2.5rem;
+  margin-bottom: 0.4rem;
+  text-shadow: 0 0 24px rgba(160, 120, 255, 0.5);
+  letter-spacing: -0.5px;
+}
+
+.game-subtitle {
+  color: #7070aa;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+/* === Game Board === */
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* === Choice Cards === */
+.choice-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.choice-card:hover {
+  transform: scale(1.09);
+  border-color: #a078ff;
+  box-shadow: 0 0 28px rgba(160, 120, 255, 0.45);
+}
+
+.card-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* === Imagens por data-choice (na div, não no button) === */
+.choice-card[data-choice="pedra"] {
+  background-image: url(images/pedra.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.choice-card[data-choice="papel"] {
+  background-image: url(images/papel.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.choice-card[data-choice="tesoura"] {
+  background-image: url(images/tesoura.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* === Responsivo === */
+@media (max-width: 600px) {
+  .choice-card {
+    width: 140px;
+    height: 140px;
+  }
+
+  .game-title {
+    font-size: 1.8rem;
+  }
+}
