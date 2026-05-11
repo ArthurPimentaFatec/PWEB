@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Objetos e Classes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Atividade de Programação Orientada a Objetos</h1>
+
+    <!-- Exercício 1: Retângulo -->
+    <section class="card">
+        <h2>1. Área do Retângulo (Função Construtora)</h2>
+        <div class="grid">
+            <div class="input-group">
+                <label>Base (x)</label>
+                <input type="number" id="base" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label>Altura (y)</label>
+                <input type="number" id="altura" placeholder="0">
+            </div>
+        </div>
+        <button id="btnArea">Calcular Área</button>
+        <div id="res_retangulo" class="result" style="display:none"></div>
+    </section>
+
+    <!-- Exercício 2: Contas Bancárias -->
+    <section class="card">
+        <h2>2. Sistema Bancário (Classes e Herança)</h2>
+        <div class="input-group">
+            <label>Nome do Correntista</label>
+            <input type="text" id="nome" placeholder="Ex: João Silva">
+        </div>
+        <div class="grid">
+            <input type="text" id="banco" placeholder="Banco">
+            <input type="text" id="conta" placeholder="Nº da Conta">
+        </div>
+        <div class="input-group">
+            <label>Saldo Inicial (R$)</label>
+            <input type="number" id="saldo" placeholder="0.00">
+        </div>
+        
+        <div class="grid">
+            <button id="btnCorrente">Criar Conta Corrente</button>
+            <button id="btnPoupanca">Criar Conta Poupança</button>
+        </div>
+        
+        <div id="res_banco" class="result" style="display:none"></div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
